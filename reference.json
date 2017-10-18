@@ -1,0 +1,1711 @@
+{
+	"@type": ["Matrix"],
+	"notification": "Success",
+	"title": "Experiment Matrix",
+	"total": 872481,
+	"batch_download": "https://www.encodeproject.org/batch_download/type%3DExperiment%26x.limit%3D%26sort%3Dtarget.label%26organ_slims%3Dbrain%26biosample_type%3Dprimary%2Bcell",
+	"visualize_batch": {
+		"GRCh38": {
+			"UCSC": "http://genome.ucsc.edu/cgi-bin/hgTracks?hubClear=https://www.encodeproject.org/batch_hub/type%3DExperiment%2C%2Cx.limit%3D%2C%2Csort%3Dtarget.label%2C%2Corgan_slims%3Dbrain%2C%2Cbiosample_type%3Dprimary%2Bcell/hub.txt&db=hg38",
+			"Ensembl": "http://www.ensembl.org/Trackhub?url=https://www.encodeproject.org/batch_hub/type%3DExperiment%2C%2Cx.limit%3D%2C%2Csort%3Dtarget.label%2C%2Corgan_slims%3Dbrain%2C%2Cbiosample_type%3Dprimary%2Bcell/hub.txt;species=Homo_sapiens"
+		},
+		"hg19": {
+			"UCSC": "http://genome.ucsc.edu/cgi-bin/hgTracks?hubClear=https://www.encodeproject.org/batch_hub/type%3DExperiment%2C%2Cx.limit%3D%2C%2Csort%3Dtarget.label%2C%2Corgan_slims%3Dbrain%2C%2Cbiosample_type%3Dprimary%2Bcell/hub.txt&db=hg19"
+		},
+		"mm10": {
+			"UCSC": "http://genome.ucsc.edu/cgi-bin/hgTracks?hubClear=https://www.encodeproject.org/batch_hub/type%3DExperiment%2C%2Cx.limit%3D%2C%2Csort%3Dtarget.label%2C%2Corgan_slims%3Dbrain%2C%2Cbiosample_type%3Dprimary%2Bcell/hub.txt&db=mm10",
+			"Ensembl": "http://www.ensembl.org/Trackhub?url=https://www.encodeproject.org/batch_hub/type%3DExperiment%2C%2Cx.limit%3D%2C%2Csort%3Dtarget.label%2C%2Corgan_slims%3Dbrain%2C%2Cbiosample_type%3Dprimary%2Bcell/hub.txt;species=Mus_musculus"
+		}
+	},
+	"matrix": {
+		"doc_count": 91,
+		"y": {
+			"group_by": ["biosample_type", "biosample_term_name"],
+			"label": "Biosample",
+			"limit": 5,
+			"biosample_type": {
+				"doc_count_error_upper_bound": 0,
+				"buckets": [{
+					"doc_count": 91,
+					"key": "primary cell",
+					"biosample_term_name": {
+						"doc_count_error_upper_bound": 0,
+						"buckets": [{
+							"doc_count": 62,
+							"key": "Purkinje cell",
+							"assay_title": [61, 0, 0, 0, 0, 0, 0, 0, 1]
+						}, {
+							"doc_count": 10,
+							"key": "choroid plexus epithelial cell",
+							"assay_title": [0, 3, 1, 1, 0, 2, 2, 1, 0]
+						}, {
+							"doc_count": 6,
+							"key": "astrocyte of the cerebellum",
+							"assay_title": [0, 3, 1, 1, 1, 0, 0, 0, 0]
+						}, {
+							"doc_count": 6,
+							"key": "brain microvascular endothelial cell",
+							"assay_title": [0, 3, 1, 1, 1, 0, 0, 0, 0]
+						}, {
+							"doc_count": 3,
+							"key": "brain pericyte",
+							"assay_title": [0, 0, 1, 1, 1, 0, 0, 0, 0]
+						}, {
+							"doc_count": 2,
+							"key": "astrocyte of the hippocampus",
+							"assay_title": [0, 0, 1, 1, 0, 0, 0, 0, 0]
+						}, {
+							"doc_count": 2,
+							"key": "cerebellar granule cell",
+							"assay_title": [2, 0, 0, 0, 0, 0, 0, 0, 0]
+						}],
+						"sum_other_doc_count": 0
+					}
+				}],
+				"sum_other_doc_count": 0
+			},
+			"facets": ["replicates.library.biosample.donor.organism.scientific_name", "biosample_type", "organ_slims", "award.project", "assembly", "internal_status", "audit_category", "lab.title"]
+		},
+		"search_base": "/search/?type=Experiment&x.limit=&sort=target.label&organ_slims=brain&biosample_type=primary+cell",
+		"x": {
+			"label": "Assay",
+			"buckets": [{
+				"doc_count": 63,
+				"key": "single cell RNA-seq"
+			}, {
+				"doc_count": 9,
+				"key": "ChIP-seq"
+			}, {
+				"doc_count": 5,
+				"key": "DNase-seq"
+			}, {
+				"doc_count": 5,
+				"key": "RNA microarray"
+			}, {
+				"doc_count": 3,
+				"key": "Hi-C"
+			}, {
+				"doc_count": 2,
+				"key": "DNAme array"
+			}, {
+				"doc_count": 2,
+				"key": "genotyping array"
+			}, {
+				"doc_count": 1,
+				"key": "RRBS"
+			}, {
+				"doc_count": 1,
+				"key": "total RNA-seq"
+			}],
+			"limit": "",
+			"sum_other_doc_count": 0,
+			"group_by": "assay_title",
+			"doc_count_error_upper_bound": 0,
+			"facets": ["assay_title", "assay_slims", "target.investigated_as", "month_released", "files.file_type"]
+		},
+		"max_cell_doc_count": 61,
+		"clear_matrix": "/matrix/?type=Experiment"
+	},
+	"@context": "/terms/",
+	"views": [{
+		"icon": "list-alt",
+		"href": "/search/?type=Experiment&x.limit=&sort=target.label&organ_slims=brain&biosample_type=primary+cell",
+		"title": "View results as list"
+	}, {
+		"icon": "table",
+		"href": "/report/?type=Experiment&x.limit=&sort=target.label&organ_slims=brain&biosample_type=primary+cell",
+		"title": "View tabular report"
+	}],
+	"filters": [{
+		"term": "brain",
+		"remove": "/matrix/?type=Experiment&x.limit=&sort=target.label&biosample_type=primary+cell",
+		"field": "organ_slims"
+	}, {
+		"term": "primary cell",
+		"remove": "/matrix/?type=Experiment&x.limit=&sort=target.label&organ_slims=brain",
+		"field": "biosample_type"
+	}],
+	"@id": "/matrix/?type=Experiment&x.limit=&sort=target.label&organ_slims=brain&biosample_type=primary+cell",
+	"facets": [{
+		"total": 91,
+		"field": "assay_slims",
+		"terms": [{
+			"doc_count": 69,
+			"key": "Transcription"
+		}, {
+			"doc_count": 9,
+			"key": "DNA binding"
+		}, {
+			"doc_count": 5,
+			"key": "DNA accessibility"
+		}, {
+			"doc_count": 3,
+			"key": "3D chromatin structure"
+		}, {
+			"doc_count": 3,
+			"key": "DNA methylation"
+		}, {
+			"doc_count": 2,
+			"key": "Genotyping"
+		}, {
+			"doc_count": 1,
+			"key": "DNA sequencing"
+		}, {
+			"doc_count": 0,
+			"key": "Proteomics"
+		}, {
+			"doc_count": 0,
+			"key": "RNA binding"
+		}, {
+			"doc_count": 0,
+			"key": "RNA structure"
+		}, {
+			"doc_count": 0,
+			"key": "Replication timing"
+		}],
+		"title": "Assay category",
+		"type": "terms"
+	}, {
+		"total": 91,
+		"field": "assay_title",
+		"terms": [{
+			"doc_count": 63,
+			"key": "single cell RNA-seq"
+		}, {
+			"doc_count": 9,
+			"key": "ChIP-seq"
+		}, {
+			"doc_count": 5,
+			"key": "DNase-seq"
+		}, {
+			"doc_count": 5,
+			"key": "RNA microarray"
+		}, {
+			"doc_count": 3,
+			"key": "Hi-C"
+		}, {
+			"doc_count": 2,
+			"key": "DNAme array"
+		}, {
+			"doc_count": 2,
+			"key": "genotyping array"
+		}, {
+			"doc_count": 1,
+			"key": "RRBS"
+		}, {
+			"doc_count": 1,
+			"key": "total RNA-seq"
+		}, {
+			"doc_count": 0,
+			"key": "5' RLM RACE"
+		}, {
+			"doc_count": 0,
+			"key": "5C"
+		}, {
+			"doc_count": 0,
+			"key": "ATAC-seq"
+		}, {
+			"doc_count": 0,
+			"key": "Bru-seq"
+		}, {
+			"doc_count": 0,
+			"key": "CAGE"
+		}, {
+			"doc_count": 0,
+			"key": "CRISPR RNA-seq"
+		}, {
+			"doc_count": 0,
+			"key": "CRISPRi RNA-seq"
+		}, {
+			"doc_count": 0,
+			"key": "ChIA-PET"
+		}, {
+			"doc_count": 0,
+			"key": "Circulome-seq"
+		}, {
+			"doc_count": 0,
+			"key": "DNA-PET"
+		}, {
+			"doc_count": 0,
+			"key": "FAIRE-seq"
+		}, {
+			"doc_count": 0,
+			"key": "MNase-seq"
+		}, {
+			"doc_count": 0,
+			"key": "MRE-seq"
+		}, {
+			"doc_count": 0,
+			"key": "MS-MS"
+		}, {
+			"doc_count": 0,
+			"key": "MeDIP-seq"
+		}, {
+			"doc_count": 0,
+			"key": "PAS-seq"
+		}, {
+			"doc_count": 0,
+			"key": "RAMPAGE"
+		}, {
+			"doc_count": 0,
+			"key": "RIP-chip"
+		}, {
+			"doc_count": 0,
+			"key": "RIP-seq"
+		}, {
+			"doc_count": 0,
+			"key": "RNA Bind-n-Seq"
+		}, {
+			"doc_count": 0,
+			"key": "RNA-PET"
+		}, {
+			"doc_count": 0,
+			"key": "RNA-seq"
+		}, {
+			"doc_count": 0,
+			"key": "Repli-chip"
+		}, {
+			"doc_count": 0,
+			"key": "Repli-seq"
+		}, {
+			"doc_count": 0,
+			"key": "Switchgear"
+		}, {
+			"doc_count": 0,
+			"key": "TAB-seq"
+		}, {
+			"doc_count": 0,
+			"key": "WGBS"
+		}, {
+			"doc_count": 0,
+			"key": "eCLIP"
+		}, {
+			"doc_count": 0,
+			"key": "genetic modification DNase-seq"
+		}, {
+			"doc_count": 0,
+			"key": "genotyping HTS"
+		}, {
+			"doc_count": 0,
+			"key": "iCLIP"
+		}, {
+			"doc_count": 0,
+			"key": "icSHAPE"
+		}, {
+			"doc_count": 0,
+			"key": "microRNA counts"
+		}, {
+			"doc_count": 0,
+			"key": "microRNA-seq"
+		}, {
+			"doc_count": 0,
+			"key": "polyA depleted RNA-seq"
+		}, {
+			"doc_count": 0,
+			"key": "polyA mRNA RNA-seq"
+		}, {
+			"doc_count": 0,
+			"key": "shRNA RNA-seq"
+		}, {
+			"doc_count": 0,
+			"key": "siRNA RNA-seq"
+		}, {
+			"doc_count": 0,
+			"key": "small RNA-seq"
+		}, {
+			"doc_count": 0,
+			"key": "whole genome sequencing assay"
+		}],
+		"title": "Assay",
+		"type": "terms"
+	}, {
+		"total": 91,
+		"field": "award.project",
+		"terms": [{
+			"doc_count": 91,
+			"key": "ENCODE"
+		}, {
+			"doc_count": 0,
+			"key": "GGR"
+		}, {
+			"doc_count": 0,
+			"key": "Roadmap"
+		}, {
+			"doc_count": 0,
+			"key": "community"
+		}, {
+			"doc_count": 0,
+			"key": "modENCODE"
+		}, {
+			"doc_count": 0,
+			"key": "modERN"
+		}],
+		"title": "Project",
+		"type": "terms"
+	}, {
+		"total": 91,
+		"field": "assembly",
+		"terms": [{
+			"doc_count": 45,
+			"key": "hg19"
+		}, {
+			"doc_count": 39,
+			"key": "mm10"
+		}, {
+			"doc_count": 35,
+			"key": "GRCh38"
+		}, {
+			"doc_count": 0,
+			"key": "GRCh38-minimal"
+		}, {
+			"doc_count": 0,
+			"key": "J02459.1"
+		}, {
+			"doc_count": 0,
+			"key": "ce10"
+		}, {
+			"doc_count": 0,
+			"key": "ce11"
+		}, {
+			"doc_count": 0,
+			"key": "dm3"
+		}, {
+			"doc_count": 0,
+			"key": "dm6"
+		}, {
+			"doc_count": 0,
+			"key": "mm10-minimal"
+		}, {
+			"doc_count": 0,
+			"key": "mm9"
+		}],
+		"title": "Genome assembly (visualization)",
+		"type": "terms"
+	}, {
+		"total": 91,
+		"field": "replicates.library.biosample.donor.organism.scientific_name",
+		"terms": [{
+			"doc_count": 52,
+			"key": "Homo sapiens"
+		}, {
+			"doc_count": 39,
+			"key": "Mus musculus"
+		}, {
+			"doc_count": 0,
+			"key": "Caenorhabditis elegans"
+		}, {
+			"doc_count": 0,
+			"key": "Drosophila ananassae"
+		}, {
+			"doc_count": 0,
+			"key": "Drosophila melanogaster"
+		}, {
+			"doc_count": 0,
+			"key": "Drosophila mojavensis"
+		}, {
+			"doc_count": 0,
+			"key": "Drosophila pseudoobscura"
+		}, {
+			"doc_count": 0,
+			"key": "Drosophila simulans"
+		}, {
+			"doc_count": 0,
+			"key": "Drosophila virilis"
+		}, {
+			"doc_count": 0,
+			"key": "Drosophila yakuba"
+		}],
+		"title": "Organism",
+		"type": "terms"
+	}, {
+		"total": 91,
+		"field": "target.investigated_as",
+		"terms": [{
+			"doc_count": 11,
+			"key": "control"
+		}, {
+			"doc_count": 3,
+			"key": "RNA binding protein"
+		}, {
+			"doc_count": 3,
+			"key": "histone"
+		}, {
+			"doc_count": 3,
+			"key": "histone modification"
+		}, {
+			"doc_count": 3,
+			"key": "narrow histone mark"
+		}, {
+			"doc_count": 3,
+			"key": "transcription factor"
+		}, {
+			"doc_count": 0,
+			"key": "broad histone mark"
+		}, {
+			"doc_count": 0,
+			"key": "chromatin remodeller"
+		}, {
+			"doc_count": 0,
+			"key": "nucleotide modification"
+		}, {
+			"doc_count": 0,
+			"key": "other context"
+		}, {
+			"doc_count": 0,
+			"key": "other post-translational modification"
+		}, {
+			"doc_count": 0,
+			"key": "recombinant protein"
+		}, {
+			"doc_count": 0,
+			"key": "tag"
+		}],
+		"title": "Target of assay",
+		"type": "terms"
+	}, {
+		"total": 886,
+		"field": "biosample_type",
+		"terms": [{
+			"doc_count": 589,
+			"key": "tissue"
+		}, {
+			"doc_count": 206,
+			"key": "immortalized cell line"
+		}, {
+			"doc_count": 91,
+			"key": "primary cell"
+		}, {
+			"doc_count": 0,
+			"key": "in vitro differentiated cells"
+		}, {
+			"doc_count": 0,
+			"key": "in vitro sample"
+		}, {
+			"doc_count": 0,
+			"key": "induced pluripotent stem cell line"
+		}, {
+			"doc_count": 0,
+			"key": "stem cell"
+		}, {
+			"doc_count": 0,
+			"key": "whole organisms"
+		}],
+		"title": "Biosample type",
+		"type": "terms"
+	}, {
+		"total": 1953,
+		"field": "organ_slims",
+		"terms": [{
+			"doc_count": 504,
+			"key": "epithelium"
+		}, {
+			"doc_count": 360,
+			"key": "skin of body"
+		}, {
+			"doc_count": 351,
+			"key": "connective tissue"
+		}, {
+			"doc_count": 195,
+			"key": "penis"
+		}, {
+			"doc_count": 146,
+			"key": "vasculature"
+		}, {
+			"doc_count": 123,
+			"key": "blood vessel"
+		}, {
+			"doc_count": 119,
+			"key": "mammary gland"
+		}, {
+			"doc_count": 91,
+			"key": "brain"
+		}, {
+			"doc_count": 69,
+			"key": "vein"
+		}, {
+			"doc_count": 61,
+			"key": "lung"
+		}, {
+			"doc_count": 46,
+			"key": "limb"
+		}, {
+			"doc_count": 42,
+			"key": "musculature of body"
+		}, {
+			"doc_count": 39,
+			"key": "kidney"
+		}, {
+			"doc_count": 37,
+			"key": "blood"
+		}, {
+			"doc_count": 37,
+			"key": "bodily fluid"
+		}, {
+			"doc_count": 24,
+			"key": "bone element"
+		}, {
+			"doc_count": 24,
+			"key": "bone marrow"
+		}, {
+			"doc_count": 24,
+			"key": "extraembryonic component"
+		}, {
+			"doc_count": 20,
+			"key": "bronchus"
+		}, {
+			"doc_count": 20,
+			"key": "eye"
+		}, {
+			"doc_count": 18,
+			"key": "heart"
+		}, {
+			"doc_count": 16,
+			"key": "artery"
+		}, {
+			"doc_count": 15,
+			"key": "embryo"
+		}, {
+			"doc_count": 13,
+			"key": "mouth"
+		}, {
+			"doc_count": 11,
+			"key": "placenta"
+		}, {
+			"doc_count": 8,
+			"key": "esophagus"
+		}, {
+			"doc_count": 8,
+			"key": "prostate gland"
+		}, {
+			"doc_count": 7,
+			"key": "liver"
+		}, {
+			"doc_count": 6,
+			"key": "lymphatic vessel"
+		}, {
+			"doc_count": 6,
+			"key": "spinal cord"
+		}, {
+			"doc_count": 6,
+			"key": "uterus"
+		}, {
+			"doc_count": 3,
+			"key": "trachea"
+		}, {
+			"doc_count": 2,
+			"key": "breast"
+		}, {
+			"doc_count": 2,
+			"key": "pericardium"
+		}, {
+			"doc_count": 2,
+			"key": "skeleton"
+		}, {
+			"doc_count": 2,
+			"key": "urinary bladder"
+		}, {
+			"doc_count": 1,
+			"key": "nose"
+		}, {
+			"doc_count": 0,
+			"key": "adipose tissue"
+		}, {
+			"doc_count": 0,
+			"key": "adrenal gland"
+		}, {
+			"doc_count": 0,
+			"key": "gonad"
+		}, {
+			"doc_count": 0,
+			"key": "intestine"
+		}, {
+			"doc_count": 0,
+			"key": "large intestine"
+		}, {
+			"doc_count": 0,
+			"key": "lymph node"
+		}, {
+			"doc_count": 0,
+			"key": "lymphoid tissue"
+		}, {
+			"doc_count": 0,
+			"key": "nerve"
+		}, {
+			"doc_count": 0,
+			"key": "ovary"
+		}, {
+			"doc_count": 0,
+			"key": "pancreas"
+		}, {
+			"doc_count": 0,
+			"key": "small intestine"
+		}, {
+			"doc_count": 0,
+			"key": "spleen"
+		}, {
+			"doc_count": 0,
+			"key": "stomach"
+		}, {
+			"doc_count": 0,
+			"key": "testis"
+		}, {
+			"doc_count": 0,
+			"key": "thymus"
+		}, {
+			"doc_count": 0,
+			"key": "thyroid gland"
+		}, {
+			"doc_count": 0,
+			"key": "tongue"
+		}, {
+			"doc_count": 0,
+			"key": "ureter"
+		}, {
+			"doc_count": 0,
+			"key": "vagina"
+		}],
+		"title": "Organ",
+		"type": "terms"
+	}, {
+		"total": 91,
+		"field": "files.file_type",
+		"terms": [{
+			"doc_count": 82,
+			"key": "fastq"
+		}, {
+			"doc_count": 81,
+			"key": "bigWig"
+		}, {
+			"doc_count": 78,
+			"key": "bam"
+		}, {
+			"doc_count": 64,
+			"key": "tsv"
+		}, {
+			"doc_count": 16,
+			"key": "bed broadPeak"
+		}, {
+			"doc_count": 16,
+			"key": "bigBed broadPeak"
+		}, {
+			"doc_count": 11,
+			"key": "bed narrowPeak"
+		}, {
+			"doc_count": 11,
+			"key": "bigBed narrowPeak"
+		}, {
+			"doc_count": 7,
+			"key": "bed bed3+"
+		}, {
+			"doc_count": 3,
+			"key": "hdf5"
+		}, {
+			"doc_count": 3,
+			"key": "idat"
+		}, {
+			"doc_count": 1,
+			"key": "bed bedLogR"
+		}, {
+			"doc_count": 1,
+			"key": "bed bedMethyl"
+		}, {
+			"doc_count": 1,
+			"key": "bigBed bedLogR"
+		}, {
+			"doc_count": 1,
+			"key": "bigBed bedMethyl"
+		}, {
+			"doc_count": 0,
+			"key": "2bit"
+		}, {
+			"doc_count": 0,
+			"key": "CEL"
+		}, {
+			"doc_count": 0,
+			"key": "bed bed12"
+		}, {
+			"doc_count": 0,
+			"key": "bed bed3"
+		}, {
+			"doc_count": 0,
+			"key": "bed bed6"
+		}, {
+			"doc_count": 0,
+			"key": "bed bed6+"
+		}, {
+			"doc_count": 0,
+			"key": "bed bed9"
+		}, {
+			"doc_count": 0,
+			"key": "bed bed9+"
+		}, {
+			"doc_count": 0,
+			"key": "bed bedExonScore"
+		}, {
+			"doc_count": 0,
+			"key": "bed bedGraph"
+		}, {
+			"doc_count": 0,
+			"key": "bed bedRnaElements"
+		}, {
+			"doc_count": 0,
+			"key": "bed candidate enhancer predictions"
+		}, {
+			"doc_count": 0,
+			"key": "bed enhancer predictions"
+		}, {
+			"doc_count": 0,
+			"key": "bed enhancerAssay"
+		}, {
+			"doc_count": 0,
+			"key": "bed idr_peak"
+		}, {
+			"doc_count": 0,
+			"key": "bed modPepMap"
+		}, {
+			"doc_count": 0,
+			"key": "bed openChromCombinedPeaks"
+		}, {
+			"doc_count": 0,
+			"key": "bed pepMap"
+		}, {
+			"doc_count": 0,
+			"key": "bed peptideMapping"
+		}, {
+			"doc_count": 0,
+			"key": "bed tss_peak"
+		}, {
+			"doc_count": 0,
+			"key": "bedpe"
+		}, {
+			"doc_count": 0,
+			"key": "bigBed bed12"
+		}, {
+			"doc_count": 0,
+			"key": "bigBed bed3"
+		}, {
+			"doc_count": 0,
+			"key": "bigBed bed3+"
+		}, {
+			"doc_count": 0,
+			"key": "bigBed bed6"
+		}, {
+			"doc_count": 0,
+			"key": "bigBed bed6+"
+		}, {
+			"doc_count": 0,
+			"key": "bigBed bed9"
+		}, {
+			"doc_count": 0,
+			"key": "bigBed bed9+"
+		}, {
+			"doc_count": 0,
+			"key": "bigBed bedExonScore"
+		}, {
+			"doc_count": 0,
+			"key": "bigBed bedRnaElements"
+		}, {
+			"doc_count": 0,
+			"key": "bigBed enhancerAssay"
+		}, {
+			"doc_count": 0,
+			"key": "bigBed idr_peak"
+		}, {
+			"doc_count": 0,
+			"key": "bigBed modPepMap"
+		}, {
+			"doc_count": 0,
+			"key": "bigBed openChromCombinedPeaks"
+		}, {
+			"doc_count": 0,
+			"key": "bigBed pepMap"
+		}, {
+			"doc_count": 0,
+			"key": "bigBed peptideMapping"
+		}, {
+			"doc_count": 0,
+			"key": "bigBed tss_peak"
+		}, {
+			"doc_count": 0,
+			"key": "bigBed unknown"
+		}, {
+			"doc_count": 0,
+			"key": "bigWig bedGraph"
+		}, {
+			"doc_count": 0,
+			"key": "csfasta"
+		}, {
+			"doc_count": 0,
+			"key": "csqual"
+		}, {
+			"doc_count": 0,
+			"key": "csv"
+		}, {
+			"doc_count": 0,
+			"key": "fasta"
+		}, {
+			"doc_count": 0,
+			"key": "gff gff3"
+		}, {
+			"doc_count": 0,
+			"key": "gtf"
+		}, {
+			"doc_count": 0,
+			"key": "hic"
+		}, {
+			"doc_count": 0,
+			"key": "rcc"
+		}, {
+			"doc_count": 0,
+			"key": "sam"
+		}, {
+			"doc_count": 0,
+			"key": "sra"
+		}, {
+			"doc_count": 0,
+			"key": "tagAlign"
+		}, {
+			"doc_count": 0,
+			"key": "tar"
+		}, {
+			"doc_count": 0,
+			"key": "vcf"
+		}, {
+			"doc_count": 0,
+			"key": "wig"
+		}],
+		"title": "Available data",
+		"type": "terms"
+	}, {
+		"total": 91,
+		"field": "month_released",
+		"terms": [{
+			"doc_count": 38,
+			"key": "October, 2015"
+		}, {
+			"doc_count": 25,
+			"key": "July, 2014"
+		}, {
+			"doc_count": 3,
+			"key": "April, 2011"
+		}, {
+			"doc_count": 3,
+			"key": "February, 2011"
+		}, {
+			"doc_count": 3,
+			"key": "January, 2012"
+		}, {
+			"doc_count": 3,
+			"key": "March, 2011"
+		}, {
+			"doc_count": 2,
+			"key": "December, 2010"
+		}, {
+			"doc_count": 2,
+			"key": "May, 2011"
+		}, {
+			"doc_count": 2,
+			"key": "November, 2011"
+		}, {
+			"doc_count": 1,
+			"key": "August, 2011"
+		}, {
+			"doc_count": 1,
+			"key": "August, 2016"
+		}, {
+			"doc_count": 1,
+			"key": "August, 2017"
+		}, {
+			"doc_count": 1,
+			"key": "December, 2011"
+		}, {
+			"doc_count": 1,
+			"key": "December, 2014"
+		}, {
+			"doc_count": 1,
+			"key": "June, 2017"
+		}, {
+			"doc_count": 1,
+			"key": "March, 2012"
+		}, {
+			"doc_count": 1,
+			"key": "May, 2017"
+		}, {
+			"doc_count": 1,
+			"key": "October, 2017"
+		}, {
+			"doc_count": 1,
+			"key": "September, 2011"
+		}, {
+			"doc_count": 0,
+			"key": "2013-11"
+		}, {
+			"doc_count": 0,
+			"key": "2014-02"
+		}, {
+			"doc_count": 0,
+			"key": "2014-03"
+		}, {
+			"doc_count": 0,
+			"key": "2014-06"
+		}, {
+			"doc_count": 0,
+			"key": "2014-07"
+		}, {
+			"doc_count": 0,
+			"key": "2014-08"
+		}, {
+			"doc_count": 0,
+			"key": "2014-09"
+		}, {
+			"doc_count": 0,
+			"key": "2014-10"
+		}, {
+			"doc_count": 0,
+			"key": "2014-11"
+		}, {
+			"doc_count": 0,
+			"key": "2014-12"
+		}, {
+			"doc_count": 0,
+			"key": "2015-01"
+		}, {
+			"doc_count": 0,
+			"key": "2015-02"
+		}, {
+			"doc_count": 0,
+			"key": "2015-03"
+		}, {
+			"doc_count": 0,
+			"key": "2015-04"
+		}, {
+			"doc_count": 0,
+			"key": "2015-05"
+		}, {
+			"doc_count": 0,
+			"key": "2015-06"
+		}, {
+			"doc_count": 0,
+			"key": "2015-09"
+		}, {
+			"doc_count": 0,
+			"key": "2015-10"
+		}, {
+			"doc_count": 0,
+			"key": "2015-11"
+		}, {
+			"doc_count": 0,
+			"key": "2015-12"
+		}, {
+			"doc_count": 0,
+			"key": "2016-01"
+		}, {
+			"doc_count": 0,
+			"key": "2016-02"
+		}, {
+			"doc_count": 0,
+			"key": "2016-03"
+		}, {
+			"doc_count": 0,
+			"key": "2016-04"
+		}, {
+			"doc_count": 0,
+			"key": "2016-05"
+		}, {
+			"doc_count": 0,
+			"key": "2016-06"
+		}, {
+			"doc_count": 0,
+			"key": "2016-07"
+		}, {
+			"doc_count": 0,
+			"key": "2016-08"
+		}, {
+			"doc_count": 0,
+			"key": "2016-09"
+		}, {
+			"doc_count": 0,
+			"key": "2016-10"
+		}, {
+			"doc_count": 0,
+			"key": "2016-11"
+		}, {
+			"doc_count": 0,
+			"key": "2016-12"
+		}, {
+			"doc_count": 0,
+			"key": "2017-01"
+		}, {
+			"doc_count": 0,
+			"key": "2017-02"
+		}, {
+			"doc_count": 0,
+			"key": "2017-03"
+		}, {
+			"doc_count": 0,
+			"key": "2017-04"
+		}, {
+			"doc_count": 0,
+			"key": "2017-05"
+		}, {
+			"doc_count": 0,
+			"key": "2017-06"
+		}, {
+			"doc_count": 0,
+			"key": "2017-08"
+		}, {
+			"doc_count": 0,
+			"key": "2017-09"
+		}, {
+			"doc_count": 0,
+			"key": "2017-10"
+		}, {
+			"doc_count": 0,
+			"key": "April, 2012"
+		}, {
+			"doc_count": 0,
+			"key": "April, 2013"
+		}, {
+			"doc_count": 0,
+			"key": "April, 2014"
+		}, {
+			"doc_count": 0,
+			"key": "April, 2015"
+		}, {
+			"doc_count": 0,
+			"key": "April, 2016"
+		}, {
+			"doc_count": 0,
+			"key": "April, 2017"
+		}, {
+			"doc_count": 0,
+			"key": "August, 2012"
+		}, {
+			"doc_count": 0,
+			"key": "August, 2014"
+		}, {
+			"doc_count": 0,
+			"key": "August, 2015"
+		}, {
+			"doc_count": 0,
+			"key": "December, 2015"
+		}, {
+			"doc_count": 0,
+			"key": "December, 2016"
+		}, {
+			"doc_count": 0,
+			"key": "February, 2012"
+		}, {
+			"doc_count": 0,
+			"key": "February, 2013"
+		}, {
+			"doc_count": 0,
+			"key": "February, 2014"
+		}, {
+			"doc_count": 0,
+			"key": "February, 2015"
+		}, {
+			"doc_count": 0,
+			"key": "February, 2016"
+		}, {
+			"doc_count": 0,
+			"key": "February, 2017"
+		}, {
+			"doc_count": 0,
+			"key": "January, 2011"
+		}, {
+			"doc_count": 0,
+			"key": "January, 2014"
+		}, {
+			"doc_count": 0,
+			"key": "January, 2015"
+		}, {
+			"doc_count": 0,
+			"key": "January, 2016"
+		}, {
+			"doc_count": 0,
+			"key": "January, 2017"
+		}, {
+			"doc_count": 0,
+			"key": "July, 2009"
+		}, {
+			"doc_count": 0,
+			"key": "July, 2011"
+		}, {
+			"doc_count": 0,
+			"key": "July, 2012"
+		}, {
+			"doc_count": 0,
+			"key": "July, 2013"
+		}, {
+			"doc_count": 0,
+			"key": "July, 2015"
+		}, {
+			"doc_count": 0,
+			"key": "July, 2016"
+		}, {
+			"doc_count": 0,
+			"key": "July, 2017"
+		}, {
+			"doc_count": 0,
+			"key": "June, 2010"
+		}, {
+			"doc_count": 0,
+			"key": "June, 2011"
+		}, {
+			"doc_count": 0,
+			"key": "June, 2012"
+		}, {
+			"doc_count": 0,
+			"key": "June, 2014"
+		}, {
+			"doc_count": 0,
+			"key": "June, 2015"
+		}, {
+			"doc_count": 0,
+			"key": "June, 2016"
+		}, {
+			"doc_count": 0,
+			"key": "March, 2006"
+		}, {
+			"doc_count": 0,
+			"key": "March, 2013"
+		}, {
+			"doc_count": 0,
+			"key": "March, 2014"
+		}, {
+			"doc_count": 0,
+			"key": "March, 2015"
+		}, {
+			"doc_count": 0,
+			"key": "March, 2016"
+		}],
+		"title": "Date released",
+		"type": "terms"
+	}, {
+		"total": 91,
+		"field": "lab.title",
+		"terms": [{
+			"doc_count": 64,
+			"key": "Barbara Wold, Caltech"
+		}, {
+			"doc_count": 19,
+			"key": "John Stamatoyannopoulos, UW"
+		}, {
+			"doc_count": 5,
+			"key": "Richard Myers, HAIB"
+		}, {
+			"doc_count": 3,
+			"key": "Job Dekker, UMass"
+		}, {
+			"doc_count": 0,
+			"key": "Abby Dernburg, Berkeley"
+		}, {
+			"doc_count": 0,
+			"key": "Alexander Hoffmann, UCLA"
+		}, {
+			"doc_count": 0,
+			"key": "Alexander Rudensky, MSKCC"
+		}, {
+			"doc_count": 0,
+			"key": "Alexander Urban, Stanford"
+		}, {
+			"doc_count": 0,
+			"key": "Ali Mortazavi, UCI"
+		}, {
+			"doc_count": 0,
+			"key": "Alkes Price, Harvard"
+		}, {
+			"doc_count": 0,
+			"key": "Andrew Z. Fire, Stanford"
+		}, {
+			"doc_count": 0,
+			"key": "Anshul Kundaje, Stanford"
+		}, {
+			"doc_count": 0,
+			"key": "Anthony Hyman, MPI"
+		}, {
+			"doc_count": 0,
+			"key": "Anton Valouev, USC"
+		}, {
+			"doc_count": 0,
+			"key": "Arshad Desai, UCSD"
+		}, {
+			"doc_count": 0,
+			"key": "Bill Noble, UW"
+		}, {
+			"doc_count": 0,
+			"key": "Bin Yu, UCB"
+		}, {
+			"doc_count": 0,
+			"key": "Bing Ren, UCSD"
+		}, {
+			"doc_count": 0,
+			"key": "Bradley Bernstein, Broad"
+		}, {
+			"doc_count": 0,
+			"key": "Brenton Graveley, UConn"
+		}, {
+			"doc_count": 0,
+			"key": "Brian Oliver, NIH"
+		}, {
+			"doc_count": 0,
+			"key": "Charles Gersbach"
+		}, {
+			"doc_count": 0,
+			"key": "Chris Burge, MIT"
+		}, {
+			"doc_count": 0,
+			"key": "Christina Leslie, MSKCC"
+		}, {
+			"doc_count": 0,
+			"key": "Colin Dewey, UW-M"
+		}, {
+			"doc_count": 0,
+			"key": "David Gifford, MIT"
+		}, {
+			"doc_count": 0,
+			"key": "David Gilbert, FSU"
+		}, {
+			"doc_count": 0,
+			"key": "David MacAlpine, Duke"
+		}, {
+			"doc_count": 0,
+			"key": "David Miller, Vanderbilt"
+		}, {
+			"doc_count": 0,
+			"key": "Douglas Black, UCLA"
+		}, {
+			"doc_count": 0,
+			"key": "ENCODE Consortium"
+		}, {
+			"doc_count": 0,
+			"key": "ENCODE Consortium Analysis Working Group"
+		}, {
+			"doc_count": 0,
+			"key": "ENCODE Processing Pipeline"
+		}, {
+			"doc_count": 0,
+			"key": "Elliott Margulies, NHGRI"
+		}, {
+			"doc_count": 0,
+			"key": "Emery Bresnick, UW-M"
+		}, {
+			"doc_count": 0,
+			"key": "Erez Lieberman-Aiden, Baylor"
+		}, {
+			"doc_count": 0,
+			"key": "Eric Lai, MSKCC"
+		}, {
+			"doc_count": 0,
+			"key": "Eric L\u00e9cuyer, IRCM"
+		}, {
+			"doc_count": 0,
+			"key": "Eric Mendenhall"
+		}, {
+			"doc_count": 0,
+			"key": "Ewan Birney, EBI"
+		}, {
+			"doc_count": 0,
+			"key": "Fabio Piano, NYU"
+		}, {
+			"doc_count": 0,
+			"key": "Feng Yue, PSU"
+		}, {
+			"doc_count": 0,
+			"key": "Frank Slack, Yale"
+		}, {
+			"doc_count": 0,
+			"key": "Gary Karpen, LBNL"
+		}, {
+			"doc_count": 0,
+			"key": "Gene Yeo, UCSD"
+		}, {
+			"doc_count": 0,
+			"key": "George Stamatoyannopoulos, UW"
+		}, {
+			"doc_count": 0,
+			"key": "Greg Cooper, HAIB"
+		}, {
+			"doc_count": 0,
+			"key": "Gregory Crawford, Duke"
+		}, {
+			"doc_count": 0,
+			"key": "Gregory Hannon, CSHL"
+		}, {
+			"doc_count": 0,
+			"key": "Guo-Cheng Yuan, Harvard"
+		}, {
+			"doc_count": 0,
+			"key": "Haiyan Huang, UCB"
+		}, {
+			"doc_count": 0,
+			"key": "Haiyuan Yu, Cornell"
+		}, {
+			"doc_count": 0,
+			"key": "Howard Chang, Stanford"
+		}, {
+			"doc_count": 0,
+			"key": "Hugo Bellen, Baylor"
+		}, {
+			"doc_count": 0,
+			"key": "J. Michael Cherry, Stanford"
+		}, {
+			"doc_count": 0,
+			"key": "James Posakony, UCSD"
+		}, {
+			"doc_count": 0,
+			"key": "Jason Ernst, UCLA"
+		}, {
+			"doc_count": 0,
+			"key": "Jason Lieb, UNC"
+		}, {
+			"doc_count": 0,
+			"key": "Jay Shendure, UW"
+		}, {
+			"doc_count": 0,
+			"key": "Jennifer Harrow, Sanger"
+		}, {
+			"doc_count": 0,
+			"key": "Jeremy Luban, UMass"
+		}, {
+			"doc_count": 0,
+			"key": "Joe Ecker, Salk"
+		}, {
+			"doc_count": 0,
+			"key": "Joh Lis, Cornell"
+		}, {
+			"doc_count": 0,
+			"key": "John Kim, UMichigan"
+		}, {
+			"doc_count": 0,
+			"key": "John Rinn, Broad"
+		}, {
+			"doc_count": 0,
+			"key": "Jonathan Pritchard, Stanford"
+		}, {
+			"doc_count": 0,
+			"key": "Joseph Costello, UCSF"
+		}, {
+			"doc_count": 0,
+			"key": "Julie Ahringer, Cambridge"
+		}, {
+			"doc_count": 0,
+			"key": "Kamran Ahmad, Harvard"
+		}, {
+			"doc_count": 0,
+			"key": "Kenneth Offit, MSKCC"
+		}, {
+			"doc_count": 0,
+			"key": "Kevin Struhl, HMS"
+		}, {
+			"doc_count": 0,
+			"key": "Kevin White, UChicago"
+		}, {
+			"doc_count": 0,
+			"key": "Kris Gunsalus, NYU"
+		}, {
+			"doc_count": 0,
+			"key": "LaDeana Hillier, WashU"
+		}, {
+			"doc_count": 0,
+			"key": "Laura Elnitski, NHGRI"
+		}, {
+			"doc_count": 0,
+			"key": "Len Pennacchio, LBNL"
+		}, {
+			"doc_count": 0,
+			"key": "Leonard Lipovich, WSU"
+		}, {
+			"doc_count": 0,
+			"key": "Lincoln Stein, OICR"
+		}, {
+			"doc_count": 0,
+			"key": "Manolis Kellis, Broad"
+		}, {
+			"doc_count": 0,
+			"key": "Manuel Garber, UMass"
+		}, {
+			"doc_count": 0,
+			"key": "Maria Ciofani, Duke"
+		}, {
+			"doc_count": 0,
+			"key": "Mark Gerstein, Yale"
+		}, {
+			"doc_count": 0,
+			"key": "Mats Ljungman, UMichigan"
+		}, {
+			"doc_count": 0,
+			"key": "Matteo Pellegrini, UCLA"
+		}, {
+			"doc_count": 0,
+			"key": "Michael Bassik, Stanford"
+		}, {
+			"doc_count": 0,
+			"key": "Michael Beer, JHU"
+		}, {
+			"doc_count": 0,
+			"key": "Michael Brent, WUSTL"
+		}, {
+			"doc_count": 0,
+			"key": "Michael Hoffman, University of Toronto"
+		}, {
+			"doc_count": 0,
+			"key": "Michael MacCoss, UW"
+		}, {
+			"doc_count": 0,
+			"key": "Michael Snyder, Stanford"
+		}, {
+			"doc_count": 0,
+			"key": "Mitzi Kuroda, Harvard"
+		}, {
+			"doc_count": 0,
+			"key": "Morgan Giddings, UNC"
+		}, {
+			"doc_count": 0,
+			"key": "Nadav Ahituv, UCSF"
+		}, {
+			"doc_count": 0,
+			"key": "Nikolaus Rajewsky, MDC"
+		}, {
+			"doc_count": 0,
+			"key": "Norbert Perrimon, Harvard"
+		}, {
+			"doc_count": 0,
+			"key": "Pardis Sabeti, Broad"
+		}, {
+			"doc_count": 0,
+			"key": "Paul Khavari, Stanford"
+		}, {
+			"doc_count": 0,
+			"key": "Peggy Farnham, USC"
+		}, {
+			"doc_count": 0,
+			"key": "Peter Bickel, UCB"
+		}, {
+			"doc_count": 0,
+			"key": "Peter Cherbas, IndianaU"
+		}],
+		"title": "Lab",
+		"type": "terms"
+	}, {
+		"total": 91,
+		"field": "audit.ERROR.category",
+		"terms": [{
+			"doc_count": 0,
+			"key": "control extremely low read depth"
+		}, {
+			"doc_count": 0,
+			"key": "extremely low read depth"
+		}, {
+			"doc_count": 0,
+			"key": "extremely low read length"
+		}, {
+			"doc_count": 0,
+			"key": "extremely low spot score"
+		}, {
+			"doc_count": 0,
+			"key": "inconsistent control"
+		}, {
+			"doc_count": 0,
+			"key": "inconsistent library biosample"
+		}, {
+			"doc_count": 0,
+			"key": "inconsistent ontology term"
+		}, {
+			"doc_count": 0,
+			"key": "inconsistent paired_with"
+		}, {
+			"doc_count": 0,
+			"key": "inconsistent replicate"
+		}, {
+			"doc_count": 0,
+			"key": "inconsistent target"
+		}, {
+			"doc_count": 0,
+			"key": "mismatched construct target"
+		}, {
+			"doc_count": 0,
+			"key": "missing antibody"
+		}, {
+			"doc_count": 0,
+			"key": "missing donor"
+		}, {
+			"doc_count": 0,
+			"key": "missing possible_controls"
+		}, {
+			"doc_count": 0,
+			"key": "missing raw data in replicate"
+		}, {
+			"doc_count": 0,
+			"key": "missing target"
+		}, {
+			"doc_count": 0,
+			"key": "multiple paired_with"
+		}, {
+			"doc_count": 0,
+			"key": "not tagged antibody"
+		}, {
+			"doc_count": 0,
+			"key": "replicate with no library"
+		}, {
+			"doc_count": 0,
+			"key": "technical replicates with not identical biosample"
+		}],
+		"title": "Audit category: ERROR",
+		"type": "terms"
+	}, {
+		"total": 91,
+		"field": "audit.NOT_COMPLIANT.category",
+		"terms": [{
+			"doc_count": 2,
+			"key": "unreplicated experiment"
+		}, {
+			"doc_count": 1,
+			"key": "insufficient read depth"
+		}, {
+			"doc_count": 0,
+			"key": "antibody not characterized to standard"
+		}, {
+			"doc_count": 0,
+			"key": "control insufficient read depth"
+		}, {
+			"doc_count": 0,
+			"key": "control low read depth"
+		}, {
+			"doc_count": 0,
+			"key": "inconsistent sex"
+		}, {
+			"doc_count": 0,
+			"key": "insufficient read length"
+		}, {
+			"doc_count": 0,
+			"key": "insufficient replicate concordance"
+		}, {
+			"doc_count": 0,
+			"key": "missing RNA fragment size"
+		}, {
+			"doc_count": 0,
+			"key": "missing controlled_by"
+		}, {
+			"doc_count": 0,
+			"key": "missing documents"
+		}, {
+			"doc_count": 0,
+			"key": "missing input control"
+		}, {
+			"doc_count": 0,
+			"key": "missing possible_controls"
+		}, {
+			"doc_count": 0,
+			"key": "missing spikeins"
+		}, {
+			"doc_count": 0,
+			"key": "need compliant primaries"
+		}, {
+			"doc_count": 0,
+			"key": "need compliant secondary"
+		}, {
+			"doc_count": 0,
+			"key": "no characterizations submitted"
+		}, {
+			"doc_count": 0,
+			"key": "no primary characterizations"
+		}, {
+			"doc_count": 0,
+			"key": "no secondary characterizations"
+		}, {
+			"doc_count": 0,
+			"key": "partially characterized antibody"
+		}, {
+			"doc_count": 0,
+			"key": "poor library complexity"
+		}, {
+			"doc_count": 0,
+			"key": "severe bottlenecking"
+		}, {
+			"doc_count": 0,
+			"key": "uncharacterized antibody"
+		}],
+		"title": "Audit category: NOT COMPLIANT",
+		"type": "terms"
+	}, {
+		"total": 91,
+		"field": "audit.WARNING.category",
+		"terms": [{
+			"doc_count": 9,
+			"key": "low read length"
+		}, {
+			"doc_count": 8,
+			"key": "low read depth"
+		}, {
+			"doc_count": 6,
+			"key": "mild to moderate bottlenecking"
+		}, {
+			"doc_count": 6,
+			"key": "moderate library complexity"
+		}, {
+			"doc_count": 4,
+			"key": "control low read depth"
+		}, {
+			"doc_count": 4,
+			"key": "insufficient read depth"
+		}, {
+			"doc_count": 2,
+			"key": "inconsistent platforms"
+		}, {
+			"doc_count": 1,
+			"key": "low spot score"
+		}, {
+			"doc_count": 0,
+			"key": "antibody characterized with exemption"
+		}, {
+			"doc_count": 0,
+			"key": "borderline replicate concordance"
+		}, {
+			"doc_count": 0,
+			"key": "high lambda C methylation ratio"
+		}, {
+			"doc_count": 0,
+			"key": "inconsistent control read length"
+		}, {
+			"doc_count": 0,
+			"key": "inconsistent control run_type"
+		}, {
+			"doc_count": 0,
+			"key": "inconsistent target of control experiment"
+		}, {
+			"doc_count": 0,
+			"key": "low replicate concordance"
+		}, {
+			"doc_count": 0,
+			"key": "missing external identifiers"
+		}, {
+			"doc_count": 0,
+			"key": "missing genotype"
+		}, {
+			"doc_count": 0,
+			"key": "missing spikeins"
+		}, {
+			"doc_count": 0,
+			"key": "missing tag construct"
+		}, {
+			"doc_count": 0,
+			"key": "mixed read lengths"
+		}, {
+			"doc_count": 0,
+			"key": "mixed run types"
+		}, {
+			"doc_count": 0,
+			"key": "multiple biosample term names in reference epigenome"
+		}, {
+			"doc_count": 0,
+			"key": "multiple biosample treatments in reference epigenome"
+		}, {
+			"doc_count": 0,
+			"key": "partial reference epigenome"
+		}],
+		"title": "Audit category: WARNING",
+		"type": "terms"
+	}]
+}
